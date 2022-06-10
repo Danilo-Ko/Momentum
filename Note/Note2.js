@@ -4,20 +4,54 @@
 
 const age = parseInt(prompt("How old are you?"));
 
-//"15" => 15 
+console.log(typeof age); // variable의 타입을 볼 때 쓴다. 
+change type. 
 
+console.log(typeof ) 
+문자는 비교할 수 없고 숫자만 비교가 가능하다.
+
+//"15" => 15 
+NaN (Not a Number)
+
+const age = parseInt(prompt("How old are you?"));
 console.log(age, parseInt(age));
+
+function ==> inside to the out
 
 1.14 Conditionals part Two (5월 11일)
 
-if(isNaN(age)){
-    console.log("Please write a number");
+
+if(condition) {
+    ///condition === true
+}else {
+    ///condition ===false
 }
+
+condition has to be a boolean
+
+execude.. 
+
+const age =parseInt (prompt ("How old are you?"));
+
+const age = parseInt ("15");
+
+if(isNaN(age)){  //return boolean.
+    console.log("Please write a number");
+}else {
+    console.log("Thank you for writing your age.");
+}
+
+for free..
+
+less than. more than 
 
 1.15 Conditionals part Three (5월 11일)
 
 
 if (isNaN(age)) {} // age가 숫자인가를 체크하는 것.
+    consle.log("Please write a number");
+
+
 
 and operator &&
 or operator ||  // one of those have to true
@@ -27,11 +61,78 @@ more than less than equal
 
 recap // 개요. 정리하다. 
 
+const age =parseInt (prompt ("How old are you?"));
+
+if(isNaN(age)){  //return boolean.
+    console.log("Please write a number");
+}else if (age <18){
+    console.log("You are too young.");
+}else{
+    console.log("You can drink.");
+}
+
 } else if (age === 10){
+
+const age =parseInt (prompt ("How old are you?"));
+
+if(isNaN(age) || age <0){  //return boolean. // probati da ubaci godinu poput 12
+    console.log("Please write a real positive number");
+}else if (age <18){
+    console.log("You are too young.");
+}else if (age>= 18 && age<=50){  //(true && true) (true && false) (true || true)
+    console.log ("You can drink");
+}else if (age >50 && age <= 80) {
+    console.log ("You should execise.");
+}else if(age >80) {
+    consle.log("You can do whatever you want.");
+}
+else{
+    console.log("You can't drink.");
+}
+
+true || true === true
+true || false === true
+false || true === true
+false || false === false
+
+true && true === true
+true && false === false
+false && true === false
+false && false === false
+
 
 === 자스에서는 순서가 중요하다. 
 
+const age =parseInt (prompt ("How old are you?"));
+
+if(isNaN(age) || age <0){  //return boolean. // probati da ubaci godinu poput 12
+    console.log("Please write a real positive number");
+}else if (age <18){
+    console.log("You are too young.");
+}else if (age>= 18 && age<=50){  //(true && true) (true && false) (true || true)
+    console.log ("You can drink");
+}else if (age >50 && age <= 80) {
+    console.log ("You should execise.");
+}else if (age === 100){  // vazno je redosled.
+    console.log("Wow you are wise.");
+}else if(age >80) {
+    consle.log("You can do whatever you want.");
+}
+
+if ((a && b) || (c &&d)) {  // Moze jos komplikovanije.
+
+}
+
+if ((a && b) || (c &&d)  || (x && y)) {  // Moze jos komplikovanije.
+
+}
+if (false|| false || false {  // Moze jos komplikovanije.
+
+}
+
 3.0 The Document Object (5월 11일)
+
+interactive
 
 console.dir(document) // document가 어떤 객체인지 보여준다.
 
@@ -42,7 +143,7 @@ document.body // body를 불러온다.
 
 3.1 HTML in JavaScript (5월 11일)
 
-document.getElementById("title") // 이걸 콘솔에서 부르면 타이틀이 있는 HTML 태그가 나온다.
+document.getEle mentById("title") // 이걸 콘솔에서 부르면 타이틀이 있는 HTML 태그가 나온다.
 
 const title = document.getElementById("title");
 console.log(title);
@@ -52,9 +153,12 @@ title.innerText = "Got you!"; // 이런 식으로 title을 자스에서 바꿀 �
 console.log=(title.id);
 console.log=(title.className); // 자스에서 이렇게 불러오는 개념을 아는 것이 아주 중요하다!
 
+
 3.2 Searching For Elements (5월 11일)
 
 const hellos = document.getElementByClassName("hello")
+
+
 
 const title = document.getElementByTagName("h1");
 
@@ -73,16 +177,13 @@ console.dir("title") // element의 내부를 볼 수 있다.
 
 title.style.color = "blue";
 
-
 event 를 listen하는 방법을 배우자.
 
 function handleTitleClick()
 
 title.addEventListener("click")
 
-
 document.title ="JavaScript execise!"
-
 
 const h1 = document.querySelector("div.hello:first-child h1");
 

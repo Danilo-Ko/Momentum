@@ -7,21 +7,28 @@
             <title> Momentum App</title>
         </head>
         <body>
-            <!-- <img clss="bg" src = "img/0.jpg"></img> -->
-            <div class = "list-group">
-                <form class = "hidden" id = "login-form">
-                    <input type ="text" required placeholder="Write your name." maxlength="15" />
-                    <input type="submit" value = "Log In" />
+                <form id = "logout-form">
+                    <input type ="button" class="login-out" value = "log Out" />
                 </form>
+                <div class ="list-group">
+                <form class = "hidden" id = "login-form">
+                    <input class = "login-input" type ="text" required placeholder="Write your name." maxlength="15" />
+                    <input type="submit" class="login-out" value = "Log In" />
+                </form>
+                <div class = "hidden" id ="screen-lock">
+                    <h2 id = "date"></h2>
                     <h2 id = "clock"> 00:00:00 </h2>
                     <h1 class = "hidden" id = "greeting"></h1>
                     <!-- <br> -->
-                    <form id = "todo-form">
-                        <input type ="text" placeholder="Write a To Do." requried />
+                    <form id = "todo-form" >
+                        <input type ="text" 
+                        style="font-size: 20px; padding: 15px; border-style:groove; border-radius:8px;
+                               background-color:rgb(219, 240, 128); width:400px;
+                        " placeholder="할 일 쓰기: 소중한 것을 잊지마세요!" requried />
                     </form>
                     <ul id = "todo-list"></ul>
                     <!-- <br> -->
-                <div id = "weather">
+                <div id = "weather" style ="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                     <span></span>
                     <span></span>
                 </div>
@@ -29,7 +36,8 @@
                     <span></span>
                     <span></span>
                 </div>
-            </div>
+                </div>
+            </div>    
             <script src="js/clock.js" defer></script>
             <script src="js/background.js" defer></script>
             <script src="js/script.js" defer></script> 
