@@ -20,10 +20,10 @@
                     <h2 id = "clock"> 00:00:00 </h2>
                     <h1 class = "hidden" id = "greeting"></h1>
                     <!-- <br> -->
+                    <div class="todo-box"> 
+                    </div>
                     <form id = "todo-form" >
-                        <input type ="text" 
-                        style="font-size: 20px; padding: 15px; border-style:groove; border-radius:8px;
-                               background-color:rgb(219, 240, 128); width:400px;
+                        <input class = "input-todo" type ="text" 
                         " placeholder="할 일 쓰기: 소중한 것을 잊지마세요!" requried />
                     </form>
                     <ul id = "todo-list"></ul>
@@ -36,13 +36,24 @@
                     <span></span>
                     <span></span>
                 </div>
+                <audio autoplay controls class="music">
+                    <source src="music/Until the Lord comes back.mp3" type="audio/mp3">
+                </audio>
+                <a class = "nomad" href = "https://nomadcoders.co" target ="_blank"><img src="img/nomad.png" alt="no image"></a>
+                <a class = "googlesearch" href = "https://www.google.co.kr/webhp" target ="_blank"><img src="img/googlesearch.png" alt="no image"></a>
+                <a class = "slack" href = "https://app.slack.com/client/T60TDKNJK/C605U8E8M" target ="_blank"><img src="img/slack.jpg" alt="no image"></a>
+                <a class = "gmail" href = "https://mail.google.com/mail/u/0/#inbox" target ="_blank"><img src="img/gmail.png" alt="no image"></a>
+                <a class = "mdn" href = "https://developer.mozilla.org/en-US/" target ="_blank"><img src="img/mdn.png" alt="no image"></a>
+                <a class = "gcalendar" href = "https://mail.google.com/mail/u/0/" target ="_blank"><img src="img/gcalendar.png" alt="no image"></a>
                 </div>
-            </div>    
+                </div>
+            </div>
             <script src="js/clock.js" defer></script>
             <script src="js/background.js" defer></script>
             <script src="js/script.js" defer></script> 
             <script src="js/weather.js" defer></script>
             <script src="js/quotes.js" defer></script> 
             <script src="js/todo.js" defer></script>
+        
         </body>
 </html>
