@@ -110,6 +110,17 @@
     font-size: 25px;
     top: 60%;
 	left: 45%;
+    line-height: 1.1;
+    margin: 30px;
+    border-collapse: separate;
+    border-spacing: 0 30px;
+}
+li {
+    line-height: 1.1;
+    padding: 3px;
+    margin: 3px;
+    border-collapse: separate;
+    border-spacing: 0 30px;
 }
 #quote {
     font-size: 20px;
